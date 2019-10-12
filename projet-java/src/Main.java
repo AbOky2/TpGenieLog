@@ -2,7 +2,8 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Function function = new Function();
-        function.function(args[0]);
+        Function funct = new Function();
+        funct.function(args[0]);
+	System.out.println("I'm fine :)");
     }
 }
