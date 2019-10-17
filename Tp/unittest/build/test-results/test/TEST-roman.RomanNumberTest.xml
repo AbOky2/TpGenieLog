@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="roman.RomanNumberTest" tests="12" skipped="0" failures="6" errors="0" timestamp="2019-10-12T15:50:04" hostname="ubuntuvdi17.sciences.lan" time="0.034">
+<testsuite name="roman.RomanNumberTest" tests="12" skipped="0" failures="6" errors="0" timestamp="2019-10-16T20:23:43" hostname="ubuntuvdi16.sciences.lan" time="0.054">
   <properties/>
-  <testcase name="fromKnownValuesRoman" classname="roman.RomanNumberTest" time="0.023">
+  <testcase name="fromKnownValuesRoman" classname="roman.RomanNumberTest" time="0.042">
     <failure message="java.lang.AssertionError: &#10;Expected: is &quot;I&quot;&#10;     but: was &quot;&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
 Expected: is &quot;I&quot;
      but: was &quot;&quot;
