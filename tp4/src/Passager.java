@@ -1,7 +1,8 @@
 import java.util.*;
 
-public class Passager extends Reservation
+public class Passager
 {
     private String nom;
     private String prenom;
+    private Reservation effectue;
 }
