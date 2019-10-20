@@ -2,6 +2,7 @@
 package roman;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.regex.Pattern;
 
 public final class RomanNumber extends Number {
@@ -65,7 +66,7 @@ public final class RomanNumber extends Number {
   @Override
   public int intValue() {
     // TODO
-    return 0;
+    return fromRoman(this.toString());
   }
 
   /**
@@ -87,6 +88,9 @@ public final class RomanNumber extends Number {
   }
 
   public static RomanNumber valueOf(String roman) {
+    if( !(roman.equals(roman.toUpperCase()))){
+      throw new IllegalArgumentException();
+    }
     return new RomanNumber(roman);
   }
 
@@ -103,14 +107,39 @@ public final class RomanNumber extends Number {
 
   private static int fromRoman(String romanValue) {
     // TODO
-    if(!(romanValue.equals(romanValue.toUpperCase()))){
-      throw new IllegalArgumentException();
+    int resultat = 0;
+    int index = 0;
+    for (Map.Entry<String, Integer> v : SYMBOLS.entrySet()) {
+      while (SousChaine(romanValue, index, index + v.getKey().length()) == v.getKey()) {
+        resultat = resultat + v.getValue();
+        index = index + v.getKey().length();
+      }
     }
-    return 0;
+
+    return resultat;
   }
+
+  public static String SousChaine (String s, int i, int j) {
+
+    char tab[] = s.toCharArray();
+    String a = "";
+    int b;
+    for (b=i; b<j; b++) {
+      a = a + tab[b];
+    }
+    return a;
+  }
+
 
   private static String toRoman(int value) {
     // TODO
-    return "";
+    String resultat = "";
+    for (Map.Entry<String, Integer> v : SYMBOLS.entrySet()) {
+      while (value >= v.getValue()) {
+        resultat = resultat + v.getKey();
+        value = value - v.getValue();
+      }
+    }
+    return resultat;
   }
 }

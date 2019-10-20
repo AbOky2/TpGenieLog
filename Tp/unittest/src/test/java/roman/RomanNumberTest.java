@@ -137,6 +137,6 @@ public class RomanNumberTest {
 
   @Test(expected = IllegalArgumentException.class)
   public void nonCapitale() {
-    RomanNumber.accessFromRoman("Ii");
+    RomanNumber.valueOf("Ii");
   }
 }
