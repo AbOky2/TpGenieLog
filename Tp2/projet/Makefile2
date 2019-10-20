@@ -1,0 +1,24 @@
+CC = gcc
+RM = rm
+PROG = example
+OBJS = main.o function.o
+
+
+all : $(PROG)
+
+
+main.o : function.h
+
+
+$(PROG) : $(OBJS)
+    @echo linkage :
+    $(CC) -o $@ $^
+
+
+%.o : %.c
+        @echo compilation de $< :
+        $(CC) -o $@ -c $<
+
+
+clean :
+        $(RM) -rf *.o $(PROG)
