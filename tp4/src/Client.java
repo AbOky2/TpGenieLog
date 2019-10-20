@@ -6,10 +6,9 @@ public class Client
     private String paiement;
     private String contact;
     private String reference;
-    //private Reservation demande;
-     public ArrayList<Reservation> tabReserv = new ArrayList<Reservation>();
 
-/*FAIRE UN TABLEAU DE RESERVATION ET AJOUTER POUR CHAQUE RESERVATION, ET POUR ANNULER FAUT VERIFIER SI LA RESERVATION Q'UON VEUT ANNULER EST DANS LE TABLEAU*/
+    public ArrayList<Reservation> tabReserv = new ArrayList<Reservation>();
+
     public Client( String n, String p, String c, String r) 
     {
         this.nom       = n;

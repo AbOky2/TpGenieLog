@@ -5,7 +5,7 @@ import java.time.*;
 public class Reservation
 {
     public Date date;
-    public double identifiant;
+    public Double identifiant;
     public String etat;
     private Client propose;
     private Passager personne;
@@ -23,7 +23,6 @@ public class Reservation
         }
     
 
-            // Verifions si le vol est ouvert
 
             Passager p = new Passager(n,c);
             this.personne = p;

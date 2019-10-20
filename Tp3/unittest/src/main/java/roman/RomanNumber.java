@@ -105,6 +105,7 @@ public final class RomanNumber extends Number {
     throw new IllegalArgumentException();
   }
 
+/* IMPLEMENTATION ALGO DANS LE TP3 MAIS FONCTIONNE PAS !!*/
   private static int fromRoman(String romanValue) {
     // TODO
     int resultat = 0;
@@ -130,7 +131,7 @@ public final class RomanNumber extends Number {
     return a;
   }
 
-
+/* IMPLEMENTATION ALGO DANS LE TP3 MAIS FONCTIONNE PAS !!*/
   private static String toRoman(int value) {
     // TODO
     String resultat = "";
