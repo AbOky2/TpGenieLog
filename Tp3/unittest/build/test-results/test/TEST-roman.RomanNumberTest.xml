@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="roman.RomanNumberTest" tests="12" skipped="0" failures="5" errors="0" timestamp="2019-10-20T12:03:04" hostname="ubuntuvdi08.sciences.lan" time="0.071">
+<testsuite name="roman.RomanNumberTest" tests="12" skipped="0" failures="5" errors="0" timestamp="2019-10-20T12:18:35" hostname="ubuntuvdi20.sciences.lan" time="0.085">
   <properties/>
-  <testcase name="fromKnownValuesRoman" classname="roman.RomanNumberTest" time="0.035"/>
-  <testcase name="nonCapitale" classname="roman.RomanNumberTest" time="0.001"/>
-  <testcase name="paireRepetition" classname="roman.RomanNumberTest" time="0.003">
+  <testcase name="fromKnownValuesRoman" classname="roman.RomanNumberTest" time="0.029"/>
+  <testcase name="nonCapitale" classname="roman.RomanNumberTest" time="0.0"/>
+  <testcase name="paireRepetition" classname="roman.RomanNumberTest" time="0.006">
     <failure message="java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException" type="java.lang.AssertionError">java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
 	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:32)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
@@ -135,7 +135,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="capitale" classname="roman.RomanNumberTest" time="0.029"/>
+  <testcase name="capitale" classname="roman.RomanNumberTest" time="0.045"/>
   <testcase name="fromRomanKnownValues" classname="roman.RomanNumberTest" time="0.0">
     <failure message="java.lang.ArrayIndexOutOfBoundsException: 1" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: 1
 	at roman.RomanNumber.SousChaine(RomanNumber.java:128)
@@ -192,11 +192,11 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="toRomanNonEntier" classname="roman.RomanNumberTest" time="0.0"/>
+  <testcase name="toRomanNonEntier" classname="roman.RomanNumberTest" time="0.001"/>
   <testcase name="toRomanZero" classname="roman.RomanNumberTest" time="0.0"/>
   <testcase name="toRomanIntervale" classname="roman.RomanNumberTest" time="0.0"/>
   <testcase name="toRomanNegative" classname="roman.RomanNumberTest" time="0.0"/>
-  <testcase name="fromRomanToRoman" classname="roman.RomanNumberTest" time="0.001">
+  <testcase name="fromRomanToRoman" classname="roman.RomanNumberTest" time="0.0">
     <failure message="java.lang.ArrayIndexOutOfBoundsException: 1" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: 1
 	at roman.RomanNumber.SousChaine(RomanNumber.java:128)
 	at roman.RomanNumber.fromRoman(RomanNumber.java:113)

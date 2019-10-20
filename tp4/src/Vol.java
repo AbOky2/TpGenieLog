@@ -1,24 +1,26 @@
+//package voyages;
 import java.util.*;
 import java.time.*;
 import java.lang.*;
 
-
-public class Vol {
-
+public class Vol
+{
     private String identifiant;
     private ZonedDateTime depart;
-    private ZonedDateTime arrivee;
+    private ZonedDateTime arrivee;    
     public final int NBRPLACE = 4;
     public int compte = 0;
 
-    public Vol (String id, ZonedDateTime dep, ZonedDateTime arr) {
+    public Vol (String id, ZonedDateTime dep, ZonedDateTime arr)
+    {
         this.identifiant = id;
         this.depart = dep;
         this.arrivee = arr;
         
     }
 
-    public Duration duree() {
+    public Duration duree() 
+    {
 
         return(Duration.between(this.arrivee,this.depart));
     }
@@ -32,8 +34,10 @@ public class Vol {
         return 0;
     }
 
-    public int fermee() {
-        if( compte < NBRPLACE) {
+    public int fermee() 
+    {
+        if( compte < NBRPLACE) 
+        {
             this.ouvrir();
             return 0;
         }
@@ -41,7 +45,8 @@ public class Vol {
         return -1;
     }
 
-    public String getId(){
+    public String getId()
+    {
         return this.identifiant;
     }
 
